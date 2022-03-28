@@ -1,7 +1,7 @@
-import DateUtils from '/modules/DateUtils.js';
+/* eslint-disable max-classes-per-file */
+/* eslint-disable no-unused-vars */
+import ElementUtils from './elementsUtils.js';
 
-const titleEl = document.getElementById('title');
-const authorEl = document.getElementById('author');
 const message = document.getElementById('message');
 const addBookFormEl = document.querySelector('#form');
 const mainContainerEl = document.getElementById('container');
@@ -23,14 +23,16 @@ export default class BooksStoreUtilities {
     }
 
     static addBook = (books) => {
-      if (books.some((book) => book.title === titleEl.value)) {
+      const author = ElementUtils.getElementById('author').value;
+      const title = ElementUtils.getElementById('title').value;
+      if (books.some((book) => book.title === title)) {
         message.textContent = 'Title must be unique';
         message.style.display = 'block';
-      } else if (titleEl.value === '' && authorEl.value === '') {
+      } else if (title === '' && author === '') {
         message.textContent = 'Fill in all the field';
         message.style.display = 'block';
       } else {
-        books.push(new Book(titleEl.value, authorEl.value));
+        books.push(new Book(title, author));
         localStorage.setItem('books', JSON.stringify(books));
         message.textContent = '';
         message.style.display = 'none';

@@ -1,9 +1,10 @@
-import BooksStoreUtilities from '/modules/bookStoreUtils.js';
-import DateUtils from '/modules/DateUtils.js';
+import BooksStoreUtilities from './bookStoreUtils.js';
+import DateUtils from './DateUtils.js';
+import ElementUtils from './elementsUtils.js';
 
 export default class UiUtils {
     static displayBooks = () => {
-      const cardContainer = document.getElementById('books');
+      const cardContainer = ElementUtils.getElementById('books');
       const storedBooks = BooksStoreUtilities.getBooks();
       cardContainer.innerHTML = '';
       let cardElement = '';

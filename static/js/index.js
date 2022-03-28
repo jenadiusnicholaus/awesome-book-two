@@ -1,15 +1,16 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable no-unused-vars */
-import UiUtils from '/modules/UI.js';
-import BooksStoreUtilities from '/modules/bookStoreUtils.js';
+import UiUtils from '../../modules/UI.js';
+import BooksStoreUtilities from '../../modules/bookStoreUtils.js';
+import ElementUtils from '../../modules/elementsUtils.js';
 
 // add book
 document.getElementById('addbtn').addEventListener('click', () => {
   const oldBooks = BooksStoreUtilities.getBooks();
   BooksStoreUtilities.addBook(oldBooks);
   UiUtils.displayBooks();
-  titleEl.value = '';
-  authorEl.value = '';
+  ElementUtils.getElementById('author').value = '';
+  ElementUtils.getElementById('title').value = '';
 });
 
 // remove a book
