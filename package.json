@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "In this project we performed a website that allows the user to record the title of a given book, to add it on the screen then to remove it if needed, so even if the page is reload, the data stay preserved in the browser",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/jenadiusnicholaus/awesome-book-two#readme",
   "devDependencies": {
+    "@types/luxon": "^2.3.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -27,5 +29,8 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
+  },
+  "dependencies": {
+    "luxon": "^2.3.1"
   }
 }

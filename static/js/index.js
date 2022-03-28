@@ -1,6 +1,11 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable no-unused-vars */
 
+import { DateTime } from "luxon";
+
+let dateTime = DateTime.local();
+console.log("Current Date", dateTime.toISO());
+
 const titleEl = document.getElementById('title');
 const authorEl = document.getElementById('author');
 const cardContainer = document.getElementById('books');
