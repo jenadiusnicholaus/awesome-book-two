@@ -1,9 +1,9 @@
 {
+  "type": "module",
   "name": "awesome-book-two",
   "version": "1.0.0",
   "description": "In this project we performed a website that allows the user to record the title of a given book, to add it on the screen then to remove it if needed, so even if the page is reload, the data stay preserved in the browser",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
