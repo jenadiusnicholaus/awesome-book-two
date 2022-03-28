@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jenadiusnicholaus/awesome-book-two/issues"
   },
-  "homepage": "https://github.com/jenadiusnicholaus/awesome-book-two#readme"
+  "homepage": "https://github.com/jenadiusnicholaus/awesome-book-two#readme",
+  "devDependencies": {
+    "hint": "^6.1.10"
+  }
 }
